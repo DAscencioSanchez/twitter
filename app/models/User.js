@@ -8,6 +8,10 @@ class User {
         this.lastUpdated = lastUpdated
     }
 
+    get getUsername() {
+        return this.username
+    }
+
 }
 
 module.exports = User

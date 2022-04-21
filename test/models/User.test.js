@@ -17,4 +17,11 @@ describe("Prueva de jest ", () => {
         expect(user.lastUpdated).not.toBeUndefined()
 
     })
+
+    test("Requerimento3: agregando getters", () => {
+        const user = new User(1, "carlogilmar", "Carlo", "Bio", "dateCreated", "dateUpdated")
+        expect(user.getUsername).toBe("carlogilmar")
+        
+    })
+
 })
