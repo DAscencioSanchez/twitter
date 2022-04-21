@@ -21,6 +21,9 @@ describe("Prueva de jest ", () => {
     test("Requerimento3: agregando getters", () => {
         const user = new User(1, "carlogilmar", "Carlo", "Bio", "dateCreated", "dateUpdated")
         expect(user.getUsername).toBe("carlogilmar")
+        expect(user.getBio).toBe("Bio")
+        expect(user.getDateCreated).not.toBeUndefined()
+        expect(user.getLastUpdated).not.toBeUndefined()
 
     })
 
